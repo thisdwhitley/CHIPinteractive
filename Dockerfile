@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     make \
+    pkg-config \
     sudo \
     usbutils \
     wget \
