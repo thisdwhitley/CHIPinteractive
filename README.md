@@ -14,6 +14,8 @@ cd CHIPinteractive;
 docker build -t "chip-interactive" .
 ```
 
+*NOTE: the build takes about 13 minutes and generates a 1.23GB size image.  There are numerous warnings during the image build, but they do not effect the functionality of the resulting image.*
+
 Then the container needs to run with privileged access to the USB device:
 
 ```
