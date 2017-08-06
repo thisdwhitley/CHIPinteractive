@@ -3,6 +3,8 @@ WORKDIR /
 RUN apt-get update && apt-get install -y \
     curl \
     git \
+    make \
+    sudo \
     usbutils \
 && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/NextThingCo/CHIP-SDK.git
