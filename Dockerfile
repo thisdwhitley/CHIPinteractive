@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     make \
     sudo \
     usbutils \
+    wget \
 && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/NextThingCo/CHIP-SDK.git
 RUN /bin/bash CHIP-SDK/setup*
