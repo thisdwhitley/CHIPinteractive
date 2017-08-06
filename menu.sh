@@ -20,7 +20,8 @@ while true; do
   echo "Enter 0 to revert back to default      ";
   echo "Enter 1 to customize buildroot         ";
   echo "Enter 2 to customize Linux             ";
-  echo "Enter 3 to stop this container         ";
+  echo "Enter 3 to flash with customizations   ";
+  echo "Enter 4 to stop this container         ";
   echo "                                       ";
   echo "=======================================";
   echo "Enter option Number:                   ";
