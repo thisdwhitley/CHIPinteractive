@@ -11,5 +11,6 @@ RUN apt-get update && apt-get install -y \
 && rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/NextThingCo/CHIP-SDK.git \
     && /bin/bash /CHIP-SDK/setup*
-RUN git clone https://github.com/dswhitley/CHIPinteractive.git
-ENTRYPOINT ["/bin/bash /CHIPinteractive/menu.sh"]
+RUN git clone -b develop https://github.com/dswhitley/CHIPinteractive.git \
+    && chmod +x /CHIPinteractive/menu.sh
+ENTRYPOINT ["/CHIPinteractive/menu.sh"]
