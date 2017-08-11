@@ -6,7 +6,13 @@
 
 This is an attempt to utilize a container in order to flash a [C.H.I.P.](https://getchip.com/pages/chip).  This is part of a larger project I'm working on for a remote, outdoor network.
 
-The container must be built on your computer via:
+You can pull this from Docker Hub:
+
+```
+docker pull dswhitley/chipinteractive
+```
+
+...or build it on your computer via:
 
 ```
 git clone https://github.com/dswhitley/CHIPinteractive.git;
