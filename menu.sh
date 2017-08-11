@@ -19,7 +19,7 @@ while true; do
   echo "=======================================";
   echo "Enter 0 to revert back to default      ";
   echo "Enter 1 to customize buildroot         ";
-  echo "Enter 2 to customize Linux             ";
+  echo "XXXEnter 2 to customize LinuxXXX       ";
   echo "Enter 3 to flash with customizations   ";
   echo "Enter 4 to stop this container         ";
   echo "                                       ";
@@ -51,7 +51,7 @@ while true; do
        sed -i 's/atenart/nextthingco/' /CHIP-buildroot/package/dtc-overlay/dtc-overlay.mk;
        make;
        read -p "= Press any key to continue..." -n1 -s;;
-    2) echo "and this is linux-config";
+    2) echo "I'm sorry, this has been abandoned but should have done the 'make linux-config' part...";
        read -p "= Press any key to continue..." -n1 -s;;
     3) echo "this step will use the custom rootfs to update the C.H.I.P.";
        cd /CHIP-tools;
