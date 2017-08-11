@@ -47,6 +47,8 @@ while true; do
        clear;
        echo "This next step will take a long time, please be patient.";
        read -p "= Press any key to continue..." -n1 -s;
+       # this appears to be a bug, but remove atenart:
+       sed -i 's/atenart/nextthingco/' /CHIP-buildroot/package/dtc-overlay/dtc-overlay.mk;
        make;
        read -p "= Press any key to continue..." -n1 -s;;
     2) echo "and this is linux-config";
