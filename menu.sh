@@ -55,7 +55,7 @@ while true; do
        cd /CHIP-tools;
        echo "Create buildroot's intermediate image files";
        # I should make outputdir a volume in my container...
-       ./chip-create-nand-images.sh ../CHIP-Buildroot/output/build/uboot* ../CHIP-Buildroot/output/images/rootfs.tar outputdir;
+       ./chip-create-nand-images.sh ../CHIP-buildroot/output/build/uboot* ../CHIP-buildroot/output/images/rootfs.tar outputdir;
        echo "...ensure that your C.H.I.P. board is jumpered for 'fel' mode as noted in the documentation";
        sleep 5;
        ./chip-update-firmware.sh -L outputdir/;
