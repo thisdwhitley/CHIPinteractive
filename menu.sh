@@ -60,6 +60,8 @@ while true; do
        ./chip-create-nand-images.sh ../CHIP-buildroot/output/build/uboot* ../CHIP-buildroot/output/images/rootfs.tar outputdir;
        echo "...ensure that your C.H.I.P. board is jumpered for 'fel' mode as noted in the documentation";
        sleep 5;
+       # it looks like a guess is made for location of directory, remove it:
+       sed -i 's/\.\.\/\.\.\/\$LOCALDIR/\$LOCALDIR/' /CHIP-tools/chip-update-firmware.sh
        ./chip-update-firmware.sh -L outputdir/;
        echo "Your C.H.I.P. has been flashed with customized firmware.";    
        read -p "= Press any key to continue..." -n1 -s;;
